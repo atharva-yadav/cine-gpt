@@ -6,11 +6,15 @@ import SecondaryContainer from "./SecondaryContainer";
 const Browse = () => {
   useNowPlayingMovies();
   
-  return <div>
-    <Header/>
-    <MainCointainer/>
-    <SecondaryContainer/>
-  </div>
-}
+  return (
+    <div className="bg-black min-h-screen text-white">
+      <Header />
+      <div>
+        <MainCointainer />
+        <SecondaryContainer />
+      </div>
+    </div>
+  );
+};
 
 export default Browse
